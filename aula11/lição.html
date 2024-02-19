@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lição 01</title>
+    <style>
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIGITE SEU PAIS ABAIXO</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">
+
+    </div>
+    <script>
+    function calcular(){
+        var p = window.document.querySelector('input#pais').value
+        var res = window.document.querySelector('div#resultado')
+        res.innerHTML += `<p>Você é do país <strong>${p}</  strong></p>`
+            if (p == 'brasil'){
+                window.document.querySelector('input#pais')
+                res.innerHTML += 'BRASILEIROOO!!'
+            }
+
+    }
+    </script>
+</body>
+</html>
